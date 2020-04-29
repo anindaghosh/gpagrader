@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/subCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="16dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:id="@+id/viewLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardSpin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                style="@style/Widget.MaterialComponents.CardView"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#fff">
+
+                <Spinner
+                    android:id="@+id/spinner_cred"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorAppBar"
+                    android:paddingLeft="10dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardSpin1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="#fff"
+                style="@style/Widget.MaterialComponents.CardView"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                android:layout_margin="8dp">
+
+                <Spinner
+                    android:id="@+id/spinner_grad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorAppBar"
+                    android:paddingLeft="10dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
